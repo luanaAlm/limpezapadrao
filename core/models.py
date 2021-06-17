@@ -47,3 +47,21 @@ class Automovel(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Depoimento(models.Model):
+    ID_Depoimento = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=100)
+    foto = models.URLField(max_length=200)
+
+    def __str__(self):
+        return self.title
+
+
+class Parceiro(models.Model):
+    ID_Parceiro = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=100)
+    foto = models.URLField(max_length=200)
+
+    def __str__(self):
+        return self.title
