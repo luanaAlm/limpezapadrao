@@ -1062,6 +1062,12 @@ section {
 /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
+.filterDiv {
+  display: none;
+}
+.show {
+  display: block;
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;

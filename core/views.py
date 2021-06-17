@@ -1,9 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import HttpResponse
 from .form import ClienteForm
-from .models import Image
+from .models import Cliente, Sofa
 
 
 def index(request):
-    pics = Image.objects.all()
-    return render(request, 'index.html')
+    sofas = Sofa.objects.all()
+    return render(request, "index.html", {
+        "sofas": sofas
+    })

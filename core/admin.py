@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Cliente, Image
+from .models import Cliente, Sofa
 
 
 admin.site.register(Cliente)
-admin.site.register(Image)
+admin.site.register(Sofa)

@@ -13,18 +13,10 @@ class Cliente(models.Model):
         return template.format(self)
 
 
-class Image(models.Model):
-    ID_Image = models.AutoField(primary_key=True)
+class Sofa(models.Model):
+    ID_Sofa = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
-    CATEGORIA_CHOICES = (
-        ('Estofados Automotivos', 'Estofados Automotivos'),
-        ('Sofas', 'Sofas'),
-        ('Camas', 'Camas'),
-        ('Carpetes e Tapetes', 'Carpetes e Tapetes'),
-    )
-    categoria = models.CharField(max_length=100, choices=CATEGORIA_CHOICES)
-    foto = models.ImageField(
-        upload_to='fotos', null=True, blank=True)
+    foto = models.URLField(max_length=200)
 
     def __str__(self):
         return self.title
