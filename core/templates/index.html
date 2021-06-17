@@ -267,30 +267,87 @@
         </div>
         
         <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        {% for x in sofas %}
-          <div class=" filterDiv sofas col-lg-4 col-md-6 portfolio-item">  
-            <div class="portfolio-wrap">
-              <img src="{{x.foto}}" class="img-fluid" alt="{{x.title}}">
-              <div class="portfolio-info">
-                <h4>Sofás</h4>
-                <p>{{x.title}}</p>
-                <div class="portfolio-links">
-                  <a href="{{x.foto}}" data-gallery="portfolioGallery" 
-                  class="portfokio-lightbox">
-                  <i class="bi bi-plus"></i>
-                </a>
-                  <a href="" title="More Details">
-                    <i class="bi bi-link"></i>
+          
+          {% for sofa in sofas %}
+            <div class=" filterDiv sofas col-lg-4 col-md-6 portfolio-item">  
+              <div class="portfolio-wrap">
+                <img src="{{sofa.foto}}" class="img-fluid" alt="{{sofa.title}}">
+                <div class="portfolio-info">
+                  <h4>{{sofa.title}}</h4>
+                  <div class="portfolio-links">
+                    <a href="{{sofa.foto}}" data-gallery="portfolioGallery" 
+                    class="portfokio-lightbox">
+                    <i class="bi bi-plus"></i>
                   </a>
+                    <a href="" title="More Details">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> 
+            </div> 
           {% endfor %}
-
-          <div class="filterDiv camas col-lg-4 col-md-6 portfolio-item">Volvo</div>
-          <div class="filterDiv tapetes col-md-6 portfolio-item">Red</div>
-          <div class="filterDiv automoveis col-md-6 portfolio-item">Mustang</div>
+        
+          {% for cama in camas %}
+            <div class=" filterDiv camas col-lg-4 col-md-6 portfolio-item">  
+              <div class="portfolio-wrap">
+                <img src="{{cama.foto}}" class="img-fluid" alt="{{cama.title}}">
+                <div class="portfolio-info">
+                  <h4>{{cama.title}}</h4>
+                  <div class="portfolio-links">
+                    <a href="{{cama.foto}}" data-gallery="portfolioGallery" 
+                    class="portfokio-lightbox">
+                    <i class="bi bi-plus"></i>
+                  </a>
+                    <a href="" title="More Details">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          {% endfor %}
+          
+          {% for tapete in tapetes %}
+            <div class=" filterDiv tapetes col-lg-4 col-md-6 portfolio-item">  
+              <div class="portfolio-wrap">
+                <img src="{{tapete.foto}}" class="img-fluid" alt="{{tapete.title}}">
+                <div class="portfolio-info">
+                  <h4>{{tapete.title}}</h4>
+                  <div class="portfolio-links">
+                    <a href="{{tapete.foto}}" data-gallery="portfolioGallery" 
+                    class="portfokio-lightbox">
+                    <i class="bi bi-plus"></i>
+                  </a>
+                    <a href="" title="More Details">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          {% endfor %}
+          
+          {% for automovel in automoveis %}
+            <div class=" filterDiv automoveis col-lg-4 col-md-6 portfolio-item">  
+              <div class="portfolio-wrap">
+                <img src="{{automovel.foto}}" class="img-fluid" alt="{{automovel.title}}">
+                <div class="portfolio-info">
+                  <h4>{{automovel.title}}</h4>
+                  <div class="portfolio-links">
+                    <a href="{{automovel.foto}}" data-gallery="portfolioGallery" 
+                    class="portfokio-lightbox">
+                    <i class="bi bi-plus"></i>
+                  </a>
+                    <a href="" title="More Details">
+                      <i class="bi bi-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          {% endfor %}
+          
         </div>
           
       </div>

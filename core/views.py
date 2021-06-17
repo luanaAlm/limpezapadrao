@@ -1,11 +1,16 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .form import ClienteForm
-from .models import Cliente, Sofa
+from .models import Cliente, Sofa, Cama, Tapete, Automovel
 
 
 def index(request):
     sofas = Sofa.objects.all()
+    camas = Cama.objects.all()
+    tapetes = Tapete.objects.all()
+    automoveis = Automovel.objects.all()
     return render(request, "index.html", {
-        "sofas": sofas
+        "sofas": sofas,
+        "camas": camas,
+        "tapetes": tapetes,
+        "automoveis": automoveis
     })
