@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .form import ClienteForm
-from .models import Cliente, Depoimento, Parceiro, Sofa, Cama, Tapete, Automovel
+from .models import Depoimento, Parceiro, Sofa, Cama, Tapete, Automovel
+from django.contrib import messages
 
 
 def index(request):
@@ -10,11 +11,25 @@ def index(request):
     automoveis = Automovel.objects.all()
     depoimentos = Depoimento.objects.all()
     parceiros = Parceiro.objects.all()
+    form = ClienteForm()
     return render(request, "index.html", {
         "sofas": sofas,
         "camas": camas,
         "tapetes": tapetes,
         "automoveis": automoveis,
         "depoimentos": depoimentos,
-        "parceiros": parceiros
+        "parceiros": parceiros,
+        "form": form
     })
+
+
+def cliente_novo(request):
+    form = ClienteForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Sua mensagem foi enviada com sucesso!')
+        return redirect('index')
+    else:
+        messages.error(
+            request, 'Houve um erro, reenvie novamente a mensagem!')
+        return redirect('index')

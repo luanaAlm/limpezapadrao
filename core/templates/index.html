@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block main %} 
-    
+{% load bootstrap %}
+
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="container">
@@ -578,7 +579,10 @@
                     <div class="info-box">
                       <i class="bi bi-envelope"></i>
                       <h3>E-mail</h3>
-                      <p>info@example.com</p>
+                      <a href="">
+                        <p>limpezapadrao@gmail.com</p>
+                      </a>
+                      
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -594,36 +598,41 @@
               </div>
     
               <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" class="php-email-form">
+                <form action="{% url 'cliente_novo' %}" method="POST" class="php-email-form">
                   <div class="row gy-4">
-    
-                    <div class="col-md-6">
-                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    </div>
-    
-                    <div class="col-md-6 ">
-                      <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                    </div>
-    
-                    <div class="col-md-12">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                    </div>
-    
-                    <div class="col-md-12">
-                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                    </div>
-    
+                    <!--Seguranca-->
+                    {% csrf_token %}
+                    {{ form|bootstrap }}
                     <div class="col-md-12 text-center">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <!-- alerta -->
+                      
+                      <!-- <div class="loading">Loading</div>
+                      <div class="sent-message"></div>
+                      <div class="error-message">
+                        Sua mensagem foi enviada com sucesso!
+                      </div> -->
     
-                      <button type="submit">Send Message</button>
+                      <button type="submit">Enviar Mensagem</button>
+                      
                     </div>
     
                   </div>
                 </form>
-    
+                <!-- alerta -->
+                {% if messages %}
+                  {% for message in messages %}
+                      <div class="alert {{message.tags}} alert-dismissible fade show" 
+                      role="alert">
+                          <strong>{{message}}</strong>
+                          <button type="button" class="close" data-dismiss="alert" 
+                          aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div> 
+                  {% endfor %}
+                {% endif %}
+                <!--Fim Alerta -->
+
               </div>
     
             </div>
