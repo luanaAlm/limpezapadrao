@@ -43,6 +43,9 @@ class Tapete(Limpeza):
 class Automovel(Limpeza):
     ID_Automovel = models.AutoField(primary_key=True)
 
+    class Meta:
+        verbose_name_plural = 'Automoveis'
+
     def __str__(self):
         return self.title
 
