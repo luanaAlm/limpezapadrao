@@ -1,4 +1,4 @@
-let lgpdUrl = 'https://limpezapadrao.herokuapp.com/';
+let lgpdUrl = 'http://127.0.0.1:8000/';
 
 let lgpdHtml = `
     <div class="lgpd" class="fixed">
@@ -15,20 +15,22 @@ let lgpdHtml = `
 `;
 
 let lsContent = localStorage.getItem('lgpd');
+
 if(!lsContent){
     document.body.innerHTML += lgpdHtml;
 
     let lgpdArea = document.querySelector('.lgpd');
-    let lgpdButton = lgpdArea.querySelector('button')
+    let lgpdButton = lgpdArea.querySelector('button');
 
-    lgpdButton.addEventListener('click', async ()=>{
+    lgpdButton.addEventListener('click', async () => {
         lgpdArea.remove();
 
         let result = await fetch(lgpdUrl);
         let json = await result.jason();
 
         if(json.error != ''){
-            localStorage.setItem('lgpd', json.id)
+            let id = json.id;
+            localStorage.setItem('lgpd', id);
         }
 
         
