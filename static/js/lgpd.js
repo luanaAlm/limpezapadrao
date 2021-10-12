@@ -1,10 +1,10 @@
-let lgpdUrl = 'http://127.0.0.1:8000/';
+let lgpdUrl = 'https://limpezapadrao.herokuapp.com/';
 
 let lgpdHtml = `
     <div class="lgpd" class="fixed">
         <div class="lgpd--left">
             Utilizamos cookies essenciais para melhor expriência do usuário,  
-            para conferir detalhadamente leia nossa <b> <a href="http://127.0.0.1:8000/politPriv/">Política de Privacidade</a></b>. <br>
+            para conferir detalhadamente leia nossa <b> <a href="https://limpezapadrao.herokuapp.com/politPriv/">Política de Privacidade</a></b>. <br>
             Ao continuar navegando, você declara estar ciente dessas condições.
         </div>
         <div class="lgpd--right">
