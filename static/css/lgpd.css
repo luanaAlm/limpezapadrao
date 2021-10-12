@@ -1,0 +1,27 @@
+.lgpd {
+  font-family: "Nunito", sans-serif;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  background-color: #4154f1;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 997;
+}
+
+.lgpd a {
+  color: #fff;
+}
+
+.lgpd button {
+  background-color: #01e675;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 30px;
+}

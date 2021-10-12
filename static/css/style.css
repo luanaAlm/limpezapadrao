@@ -1650,7 +1650,6 @@ section {
   padding: 15px;
   margin-bottom: 24px;
 }
-
 .contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -1706,7 +1705,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
