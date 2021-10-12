@@ -1,16 +1,15 @@
 from pathlib import Path
 # heroku
 import django_heroku
-from decouple import config
+
 # mensagem
 from django.contrib.messages import constants as messages
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-n(ew5r*c_@)fy(ugpji!i%c4p#_&*be@&$t1ctv33zbsj178#)'
 
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
