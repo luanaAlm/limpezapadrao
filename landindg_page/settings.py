@@ -8,7 +8,7 @@ from django.contrib.messages import constants as messages
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-n(ew5r*c_@)fy(ugpji!i%c4p#_&*be@&$t1ctv33zbsj178#)'
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
