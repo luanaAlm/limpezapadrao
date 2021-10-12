@@ -1,4 +1,7 @@
 from pathlib import Path
+# heroku
+import django_heroku
+
 # mensagem
 from django.contrib.messages import constants as messages
 
@@ -101,3 +104,6 @@ MEDIA_ROOT = 'imagens'
 MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# heroku
+django_heroku.settings(locals())
