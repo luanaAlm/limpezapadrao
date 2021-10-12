@@ -1,7 +1,7 @@
-from django.shortcuts import redirect, render
-from .form import ClienteForm
-from .models import Depoimento, Parceiro, Sofa, Cama, Tapete, Automovel
 from django.contrib import messages
+from .models import Depoimento, Parceiro, Sofa, Cama, Tapete, Automovel
+from .form import ClienteForm
+from django.shortcuts import redirect, render
 
 
 def index(request):

@@ -13,37 +13,35 @@ class Cliente(models.Model):
         return template.format(self)
 
 
-class Sofa(models.Model):
+class Limpeza(models.Model):
+    ID_Limpeza = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=100)
+    foto = models.URLField(max_length=200)
+
+
+class Sofa(Limpeza):
     ID_Sofa = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100)
-    foto = models.URLField(max_length=200)
 
     def __str__(self):
         return self.title
 
 
-class Cama(models.Model):
+class Cama(Limpeza):
     ID_Cama = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100)
-    foto = models.URLField(max_length=200)
 
     def __str__(self):
         return self.title
 
 
-class Tapete(models.Model):
+class Tapete(Limpeza):
     ID_Tapete = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100)
-    foto = models.URLField(max_length=200)
 
     def __str__(self):
         return self.title
 
 
-class Automovel(models.Model):
+class Automovel(Limpeza):
     ID_Automovel = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100)
-    foto = models.URLField(max_length=200)
 
     def __str__(self):
         return self.title
