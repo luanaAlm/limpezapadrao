@@ -4,6 +4,10 @@ from .form import ClienteForm
 from django.shortcuts import redirect, render
 
 
+def PolitPriv(request):
+    return render(request, 'politPriv.html')
+
+
 def index(request):
     sofas = Sofa.objects.all()
     camas = Cama.objects.all()
