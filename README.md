@@ -17,7 +17,7 @@
 # Sobre
 
 <h1 align = "center">
-    <img alt = "limpezapadrao" title = "limpezapadrao" src = "https://github.com/luanaAlm/limpezapadrao/blob/main/static/img/screencapture-127-0-0-1-8000-2021-06-18-11_16_32.pdf" height="3000"/>
+    <img alt = "limpezapadrao" title = "limpezapadrao" src = "https://github.com/luanaAlm/limpezapadrao/blob/main/static/img/screencapture-limpezapadrao-herokuapp-2021-10-18-19_32_44.png" height="3000"/>
 </h1>
 
 
