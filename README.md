@@ -8,8 +8,8 @@
 <p align="center">Esse é um site comercial de uma empresa de limpeza de estofádos</p>
 
 <p align="center">
-    <a href="#sobre">Sobre</a> . 
-    <a href="#Tecnologias">Tecnologias</a> . 
+    <a href="#sobre">Sobre</a> | 
+    <a href="#Tecnologias">Tecnologias</a> | 
 </p>
 
 <h4 align="center"> Projeto README. Em construção ...</h4>
