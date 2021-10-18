@@ -16,11 +16,12 @@
 
 # Sobre
 
+ - Site comercial: **[ Limpeza Padrão ](https://limpezapadrao.herokuapp.com/)**
+ - Este projeto foi desenvolvido por **[ Luana Almeida ](https://github.com/luanaAlm)** , template **[ bootstrapmade ](https://bootstrapmade.com/flexstart-bootstrap-startup-template/)**
+
 <h1 align = "center">
     <img alt = "limpezapadrao" title = "limpezapadrao" src = "https://github.com/luanaAlm/limpezapadrao/blob/main/static/img/screencapture-limpezapadrao-herokuapp-2021-10-18-19_32_44.png" height="3000"/>
 </h1>
-
-
 
 
 # Tecnologias
