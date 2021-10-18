@@ -38,4 +38,4 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
  <hr>
 
- Este projeto foi desenvolvido por **[ Luana Almeida ](https://github.com/luanaAlm)** , template **[ bootstrapmade ](https://bootstrapmade.com/flexstart-bootstrap-startup-template/)**
+ Feito por **[ Luana Almeida ](https://github.com/luanaAlm)** , template **[ bootstrapmade ](https://bootstrapmade.com/flexstart-bootstrap-startup-template/)**
