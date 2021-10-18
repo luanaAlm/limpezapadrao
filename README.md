@@ -1,7 +1,5 @@
 ## LimpezaPadrão
 
-
-
 <h1 align="center">
     <img alt="limpezapadrao" title="limpezapadrao" src="https://github.com/luanaAlm/limpezapadrao/blob/main/static/img/logo2.png" height="80"  />
 </h1>
@@ -38,5 +36,6 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
- 
+ <hr>
+
  Este projeto foi desenvolvido por **[ Luana Almeida ](https://github.com/luanaAlm)** , template **[ bootstrapmade ](https://bootstrapmade.com/flexstart-bootstrap-startup-template/)**
